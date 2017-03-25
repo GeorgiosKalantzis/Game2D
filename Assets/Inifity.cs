@@ -7,18 +7,19 @@ public class Inifity : MonoBehaviour {
     public GameObject regrasstop;
     Vector2 can;
 
-	
-	void Start () {
-
+    void Start ()
+    {
         can.y = transform.position.y;
-        
-}
+    }
 	
-	void Update () {
-
+    void Update () 
+    {
         can.x = transform.position.x;
+	    
         can.x += 3;
+	    
         transform.position = can;
+	    
         Instantiate(regrasstop, transform.position, transform.rotation);
 
     }
